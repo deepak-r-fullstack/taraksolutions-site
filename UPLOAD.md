@@ -1,4 +1,4 @@
-# Putting taraksolutions.com online (free, with GitHub Pages)
+# Putting sritaraksolutions.in online (free, with GitHub Pages)
 
 The site is plain HTML, CSS and a little JavaScript. GitHub Pages hosts it for free with HTTPS.
 Your domain stays at Hostinger; you only change its DNS records there.
@@ -25,11 +25,11 @@ git push -u origin master
 Repository > **Settings** > **Pages**:
 - Source: **Deploy from a branch**
 - Branch: **master**, folder **/ (root)** > **Save**
-- Custom domain: `taraksolutions.com` > **Save** (the `CNAME` file in this folder already says this)
+- Custom domain: `sritaraksolutions.in` > **Save** (the `CNAME` file in this folder already says this)
 
 ## 3. Point the domain at GitHub (Hostinger)
 
-hPanel > **Domains** > taraksolutions.com > **DNS / Nameservers** > **DNS records**.
+hPanel > **Domains** > sritaraksolutions.in > **DNS / Nameservers** > **DNS records**.
 
 1. Delete any existing **A** record named `@` and any **CNAME** named `www` (often a "parked" page).
 2. Add four **A** records, Name `@`, one for each address:
