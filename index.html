@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarak Solutions | Web apps and AI features people can trust</title>
+    <meta
+      name="description"
+      content="Tarak Solutions builds web applications and safe AI features for businesses, led by Deepak R, a full-stack technical lead with 7 years in healthcare and transportation software."
+    />
+    <meta property="og:title" content="Tarak Solutions" />
+    <meta property="og:description" content="Web apps and AI features that non-technical people can use with confidence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://taraksolutions.com/" />
+    <meta property="og:image" content="https://taraksolutions.com/assets/img/agentguard-activity.webp" />
+    <link rel="canonical" href="https://taraksolutions.com/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tarak Solutions",
+        "url": "https://taraksolutions.com/",
+        "email": "deepakravikumar.dev@gmail.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Deepak R",
+          "jobTitle": "Full-Stack Technical Lead",
+          "sameAs": ["https://www.linkedin.com/in/deepak-r-fullstack", "https://github.com/deepak-r-fullstack"]
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="/" class="brand" aria-label="Tarak Solutions, home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor" />
+            <path d="M9 10h14M16 10v13" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <span>Tarak Solutions</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Menu</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#founder">About</a>
+          <a href="#contact" class="nav-cta">Start a project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero: the claim, and next to it, proof from a real product -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>We build web apps and AI features that people can use with confidence.</h1>
+            <p class="lead">
+              Tarak Solutions designs and builds software for businesses: booking and scheduling systems, dashboards,
+              customer portals, and AI that helps your team without taking risky decisions on its own.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Start a project</a>
+              <a class="button button-secondary" href="#work">See our work</a>
+            </div>
+            <p class="hero-note">Based in Karnataka, India. Available for remote projects worldwide.</p>
+          </div>
+
+          <figure class="proof" aria-labelledby="proof-caption">
+            <div class="slip" aria-hidden="true">
+              <p class="slip-meta"><strong>Support Copilot</strong> asked 2 min ago, for Ravi (support team)</p>
+              <p class="slip-title">Cancel booking BK-1001 (Goa beach villa) for Priya Sharma and refund ₹7,500</p>
+              <p class="slip-reason">“Customer asked in chat”</p>
+              <div class="slip-why">
+                <p>Why this needs you</p>
+                <p>Rule “Big cancellations need a manager” applies.</p>
+              </div>
+              <div class="slip-buttons">
+                <span class="slip-approve">Approve and run</span>
+                <span class="slip-reject">Reject</span>
+              </div>
+            </div>
+            <figcaption id="proof-caption">
+              <span class="live-dot" aria-hidden="true"></span>
+              A real screen from <a href="https://agentguard.taraksolutions.com">AgentGuard</a>: the AI agent asks, a person
+              decides.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Work</h2>
+            <p>Products we build in the open. Each one has a live demo you can try and source code you can read.</p>
+          </div>
+
+          <article class="project-feature">
+            <div class="project-text">
+              <div class="project-title-row">
+                <h3>AgentGuard</h3>
+                <span class="status status-live">Live demo</span>
+              </div>
+              <p class="project-summary">
+                Lets AI agents work on real company systems, with a person in charge. Every action is checked against the
+                company's rules, risky ones wait for a manager, everything is recorded, and mistakes can be undone with one
+                click.
+              </p>
+              <ul class="project-points">
+                <li>Rules are checked by plain code, so an AI can never talk its way into an approval.</li>
+                <li>Safe against double clicks and retries: twenty Undo clicks at once undo exactly once.</li>
+                <li>Every step recorded: which agent, for whom, which rule, who approved.</li>
+              </ul>
+              <p class="project-stack">React, TypeScript, Node.js, Express, MongoDB. 50 automated tests.</p>
+              <div class="project-links">
+                <a class="button button-primary" href="https://agentguard.taraksolutions.com">Try the live demo</a>
+                <a class="button button-secondary" href="https://github.com/deepak-r-fullstack/agentguard">Read the code</a>
+              </div>
+            </div>
+            <a class="project-shot" href="https://agentguard.taraksolutions.com" tabindex="-1" aria-hidden="true">
+              <img
+                src="/assets/img/agentguard-activity.webp"
+                alt=""
+                width="1200"
+                height="885"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </article>
+
+          <!-- Add the next project by copying one <li> below and changing the text. -->
+          <ul class="project-list">
+            <li class="project-card">
+              <div class="project-title-row">
+                <h3>Flight Recorder</h3>
+                <span class="status status-planned">In planning</span>
+              </div>
+              <p>Replays any AI conversation step by step, so a team can see exactly why an answer went wrong and turn it into a test.</p>
+            </li>
+            <li class="project-card">
+              <div class="project-title-row">
+                <h3>HelpMe Layer</h3>
+                <span class="status status-planned">In planning</span>
+              </div>
+              <p>A help button for any web app that explains the screen in Kannada, Hindi or English and shows the next step to click.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>What we build for you</h2>
+            <p>Software that fits how your team already works, explained in plain words at every step.</p>
+          </div>
+          <ul class="service-list">
+            <li>
+              <h3>Web applications</h3>
+              <p>Booking and scheduling systems, customer portals, admin dashboards and reports. Built with React and Node.js, ready for real users from day one.</p>
+            </li>
+            <li>
+              <h3>AI features with guardrails</h3>
+              <p>Assistants that answer from your own documents and agents that take actions, with approvals, limits and a full record of what they did.</p>
+            </li>
+            <li>
+              <h3>Cloud setup and rescue</h3>
+              <p>Deployments on AWS, tidy infrastructure, faster pages and fixes for systems that have grown hard to change.</p>
+            </li>
+            <li>
+              <h3>Healthcare and transport software</h3>
+              <p>Years of hands-on work with home-care scheduling, visit verification, billing and transportation platforms.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Founder -->
+      <section id="founder" class="section">
+        <div class="container founder">
+          <div class="founder-text">
+            <h2>Who is behind Tarak Solutions</h2>
+            <p class="founder-name">Deepak R, founder</p>
+            <p>
+              I am a full-stack technical lead with about 7 years of experience. I have led development on platforms for
+              home-care agencies, transportation and public safety, including scheduling, visit verification, billing,
+              reports, public APIs and mobile apps, running on AWS.
+            </p>
+            <p>
+              Most of the people who use the software I build are not technical. That shapes everything: simple screens,
+              clear words, and systems that are forgiving when someone makes a mistake.
+            </p>
+            <div class="founder-links">
+              <a href="https://www.linkedin.com/in/deepak-r-fullstack">LinkedIn</a>
+              <a href="https://github.com/deepak-r-fullstack">GitHub</a>
+            </div>
+          </div>
+          <dl class="facts">
+            <div>
+              <dt>Experience</dt>
+              <dd>About 7 years in full-stack development</dd>
+            </div>
+            <div>
+              <dt>Main tools</dt>
+              <dd>React, Node.js, TypeScript, MongoDB, AWS</dd>
+            </div>
+            <div>
+              <dt>Industries</dt>
+              <dd>Healthcare, transportation, public safety</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Karnataka, India. Remote with any time zone.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Process: a real sequence, so it is numbered -->
+      <section class="section section-alt" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="process-title">How a project works</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>We listen</h3>
+              <p>A short call about your problem, your users and your budget. You get a written plan and a clear price before any work starts.</p>
+            </li>
+            <li>
+              <h3>We build in small steps</h3>
+              <p>You see working software every week, not a surprise at the end. Changes are easy while it is still small.</p>
+            </li>
+            <li>
+              <h3>We hand it over properly</h3>
+              <p>Your code, your accounts and simple guides for your team, with support after launch if you need it.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact-text">
+            <h2>Start a project</h2>
+            <p>Tell us what you want to build or fix, and we will reply by email.</p>
+            <ul class="contact-direct">
+              <li>
+                <span>Email</span>
+                <a href="mailto:deepakravikumar.dev@gmail.com">deepakravikumar.dev@gmail.com</a>
+              </li>
+              <li>
+                <span>WhatsApp or call</span>
+                <a href="https://wa.me/917760533959">+91 77605 33959</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/deepak-r-fullstack">deepak-r-fullstack</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="100" />
+            </div>
+            <div class="field">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="150" />
+            </div>
+            <div class="field">
+              <label for="message">What do you need?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                maxlength="3000"
+                placeholder="For example: a booking system for my clinic, or adding an AI assistant to our app"
+              ></textarea>
+            </div>
+            <!-- Hidden from people; bots fill it in, so those messages are dropped. -->
+            <div class="trap" aria-hidden="true">
+              <label for="company-website">Leave this empty</label>
+              <input id="company-website" name="botcheck" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year">2026</span> Tarak Solutions. Built by Deepak R.</p>
+        <nav aria-label="Footer">
+          <a href="https://github.com/deepak-r-fullstack">GitHub</a>
+          <a href="https://www.linkedin.com/in/deepak-r-fullstack">LinkedIn</a>
+          <a href="mailto:deepakravikumar.dev@gmail.com">Email</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/assets/main.js" defer></script>
+  </body>
+</html>
