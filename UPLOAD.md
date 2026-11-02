@@ -44,12 +44,28 @@ Back in **Settings** > **Pages**, when the domain check turns green, tick **Enfo
 
 ## Contact form
 
-Until this is done, "Send message" opens the visitor's email app with the message filled in.
+Until this is done, "Send message" opens the visitor's email app with the message filled in (so nobody is lost). It works, but a real key is nicer for visitors.
 
 1. Go to https://web3forms.com, enter `deepakravikumar.dev@gmail.com`, and get your access key by email.
 2. In `assets/main.js`, paste it: `const WEB3FORMS_ACCESS_KEY = "your-key-here";`
 3. `git commit -am "Turn on contact form"` and `git push`. GitHub updates the site in about a minute.
 
+The hidden "Leave this empty" field is a spam trap. Leave it in the page.
+
 ## Add a new project later
 
-In `index.html`, find the comment `Add the next project` and copy one `<li class="project-card">` block. Commit and push.
+In `index.html`, find the comment `Add the next project`. Copy one `<li class="project-card lift" data-reveal>` block below it and change the text.
+A project that is finished and has a live demo can instead copy a whole `<article class="project-feature">` block (AgentGuard or AgentReplay) with its screenshot.
+Screenshots go in `assets/img/` as WebP, and the `<img>` needs `width`, `height` and a short `alt`. Commit and push.
+
+## Voice assistant ("Talk to Deepak's AI")
+
+The button loads the ElevenLabs widget only when someone presses it, so the page stays fast. The agent ID is the same as on the personal portfolio and lives at the top of `assets/main.js` (`ELEVENLABS_AGENT_ID`).
+
+## Light and dark theme
+
+The page follows the visitor's device setting. The small moon/sun button in the header saves their choice in their own browser.
+
+## Making changes safely
+
+Never push straight to `master`: that publishes the live site immediately. Make a branch, open a pull request, check it, then merge.
